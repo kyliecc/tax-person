@@ -1,0 +1,180 @@
+.container{
+  width: 820px;
+  margin: 35px auto 0;
+  font-family: "宋体";
+}
+.container .content{
+  margin: auto;
+  padding-top: 5px;
+}
+.container .content, .dashedLine{
+  width: 626px;
+}
+.notaxReason2Detail{
+  width: 616px;
+}
+.container h1.title{
+  text-align: center;
+  font-size: 22px;
+  font-weight: normal;
+  font-family: "microsoft yahei";
+}
+.container .form-group{
+  margin-bottom: 4px;
+}
+.container .info{
+  position: relative;
+  display: inline-block;
+  border: 0;
+  border-bottom: 1px solid black;
+  height: 20px;
+  padding: 0 5px;
+  vertical-align: middle;
+}
+.container .info span{
+  position: absolute;
+  left: 5px;
+  top: 0;
+}
+.container .name{
+  width: 25%;
+}
+.container .declare{
+  font-weight: bolder;
+  font-family: "黑体","heiti";
+}
+.container .declare span, .container .declare ul{
+  font-size: 15px;
+  float: left;
+  display: inline-block;
+}
+.container .declare ul{
+  position: relative;
+  width: 80%;
+  margin-left: 2%;
+}
+.container .declare li{
+  float: left;
+}
+.container .declare li, .container .reason li{
+  margin-right: 4%;
+}
+.declare i{
+  margin-top: -2px;
+}
+.identity span{
+  line-height: 20px;
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 219124 */
+  src: url('//at.alicdn.com/t/font_219124_lmnsc8tw9vmcmcxr.eot');
+  src: url('//at.alicdn.com/t/font_219124_lmnsc8tw9vmcmcxr.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_219124_lmnsc8tw9vmcmcxr.woff') format('woff'),
+  url('//at.alicdn.com/t/font_219124_lmnsc8tw9vmcmcxr.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_219124_lmnsc8tw9vmcmcxr.svg#iconfont') format('svg');
+}
+.container .iconfont {
+  /*font-weight: bold;*/
+  font-family: "iconfont";
+  margin-right: 3px;
+  vertical-align: middle;
+  font-size: 22px;
+}
+.container .nowAddressChn{
+  width: 10%;
+}
+.container .nowAddressEng{
+  width: 11%;
+}
+.container .addressCh {
+  width: 70%;
+}
+.container .addressEng {
+  width: 89%;
+}
+.container .marginTop10 {
+  margin-top: 10px;
+}
+.container .marginBottom5 {
+  margin-bottom: 5px;
+}
+.container .taxNumber {
+  width: 40%;
+  margin-left: 5px;
+}
+.container .solidline {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+.container .declaraction {
+  text-indent: 5%;
+  font: bolder 15px/24px "黑体","heiti";
+}
+.container .floatL{
+  float: left;
+}
+.container .floatR{
+  float: right;
+}
+.container .identity, .container .sign{
+  padding: 0 5%;
+  margin: 27px 0 0;
+}
+.container .sign .signName,.operator .info{
+  border: none;
+}
+.identity li {
+  margin-right: 40px;
+}
+.dashedLine {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0 0 5px;
+}
+.explain {
+  line-height: 23px;
+  font-family: "黑体","heiti";
+}
+.explain p {
+  font-size: 15px;
+  font-weight: bold;
+}
+.explain ul li{
+  line-height: 24px;
+}
+.date {
+  width: 40px;
+}
+.info.date{
+  border: none;
+}
+.font12{
+  font-size: 12px;
+}
+.font14{
+  font-size: 14px;
+}
+.birthAddress{
+  width: 7%;
+}
+.container .operator{
+  margin: 29px 0;
+  padding: 0 5%;
+}
+.allot_date,#allot_date{
+  display: inline-block;
+  width: 110px;
+  text-align: left;
+}
+.tog_china_tax,
+.tog_nochina_tax,
+.tog_both_tax,
+.tog_notax_reason1,
+.tog_notax_reason2,
+.tog_sign_self,
+.tog_sign_deputy{
+  display: none;
+}
+
+
+

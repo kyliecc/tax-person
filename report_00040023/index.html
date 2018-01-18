@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../common/common.css"/>
+    <link rel="stylesheet" href="./index.css"/>
+  </head>
+  <body>
+    <div  class="container clearfix">
+      <h1 class="title">个人税收居民身份声明文件</h1>
+      <div class="content">
+        <div class = "form-group">
+          <span>
+            姓名：
+          </span>
+          <div class="info name">
+            <span id="full_name"></span>
+          </div>
+
+        </div>
+        <div class="form-group declare clearfix">
+          <span >本人声明：</span>
+          <ul>
+            <li>
+              <i class="iconfont floatL tog_china_tax">&#xe664;</i>
+              <i class="iconfont floatL tog_china_tax">&#xe665;</i>
+              <span >1.为中国税收居民</span>
+            </li>
+            <li>
+              <i class="iconfont floatL tog_nochina_tax">&#xe664;</i>
+              <i class="iconfont floatL tog_nochina_tax">&#xe665;</i>
+              <span >2.为非中国税收居民（即“非居民”）</span>
+            </li>
+            <li>
+              <i class="iconfont floatL tog_both_tax">&#xe664;</i>
+              <i class="iconfont floatL tog_both_tax">&#xe665;</i>
+              <span >3.既是中国税收居民又是其他国家（地区）税收居民</span></li>
+          </ul>
+
+        </div>
+        <p class="marginBottom5">（如在以上选项中勾选第 2项或者第 3项，请填写下列信息）</p>
+        <div class="form-group">
+          <span>
+            姓（英文或拼音）：
+          </span>
+          <div class="info name">
+            <span id="english_family_name"></span>
+          </div>
+          <span>
+            名（英文或拼音）：
+          </span>
+          <div class="info name">
+            <span id="english_first_name"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <span>
+            出生日期：
+          </span>
+          <div class="info name">
+            <span id="birthday"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <span>
+            现居地址（中文）：
+          </span>
+          <div class="info nowAddressChn">
+            <span id="live_country_cn"></span>
+          </div>
+          <span>
+            （国家）
+          </span>
+          <div class="info nowAddressChn">
+            <span id="live_province_cn"></span>
+          </div>
+          <span>
+            （省）
+          </span>
+          <div class="info nowAddressChn">
+            <span id="live_city_cn"></span>
+          </div>
+           <span>
+            （市）
+          </span>
+          <div class="info nowAddressChn">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="info addressCh">
+            <span id="live_location_cn"></span>
+          </div>
+          <span>（境外地址可不填此项）</span>
+        </div>
+        <div class="form-group">
+          <span>（英文或拼音）：</span>
+          <div class="info nowAddressEng">
+            <span id="live_country_en"></span>
+          </div>
+          <span>
+            （国家）
+          </span>
+          <div class="info nowAddressEng">
+            <span id="live_province_en"></span>
+          </div>
+          <span>
+            （省）
+          </span>
+          <div class="info nowAddressEng">
+            <span id="live_city_en"></span>
+          </div>
+           <span>
+            （市）
+          </span>
+          <div class="info nowAddressEng">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="info addressEng">
+            <span id="live_location_en"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <span>
+            出生地（中文）：
+          </span>
+          <div class="info birthAddress">
+            <span id="birth_country_cn"></span>
+          </div>
+          <span>
+            （国家）
+          </span>
+          <div class="info birthAddress">
+            <span id="birth_province_cn"></span>
+          </div>
+          <span>
+            （省）
+          </span>
+          <div class="info birthAddress">
+            <span id="birth_city_cn"></span>
+          </div>
+           <span>
+            （市）（境外地址可不填此项）
+          </span>
+        </div>
+        <div class="form-group">
+          <span>
+            （英文或拼音）：
+          </span>
+          <div class="info nowAddressEng">
+            <span id="birth_country_en"></span>
+          </div>
+          <span>
+            （国家）
+          </span>
+          <div class="info nowAddressEng">
+            <span id="birth_province_en"></span>
+          </div>
+          <span>
+            （省）
+          </span>
+          <div class="info nowAddressEng">
+            <span id="birth_city_en"></span>
+          </div>
+           <span>
+            （市）
+          </span>
+        </div>
+        <p class="marginTop10 marginBottom5">税收居民国（地区）及纳税人识别号：</p>
+        <div class="form-group">
+         <span class="tax">
+           1.
+          </span>
+          <div class="info taxNumber">
+            <span id="tax_no_1"></span>
+          </div>
+        </div>
+        <div class="form-group">
+         <span class="tax">
+           2.
+          </span>
+          <div class="info taxNumber">
+            <span id="tax_no_2"></span>
+          </div>
+        </div>
+        <div class="form-group">
+         <span class="tax">
+           3.
+          </span>
+          <div class="info taxNumber">
+            <span id="tax_no_3"></span>
+          </div>
+        </div>
+        <p class="marginBottom5">如不能提供居民国（地区）纳税人识别号，请选择原因：</p>
+        <div class="form-group reason">
+          <ul>
+            <li>
+              <i class="iconfont tog_notax_reason1">&#xe664;</i>
+              <i class="iconfont tog_notax_reason1">&#xe665;</i>
+              <span>
+                居民国（地区）不发放纳税人识别号
+              </span>
+            </li>
+            <li>
+              <i class="iconfont tog_notax_reason2">&#xe664;</i>
+              <i class="iconfont tog_notax_reason2">&#xe665;</i>
+              <span>
+                账户持有人未能取得纳税人识别号，如选此项，请解释具体原因
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="form-group">
+          <div class="info notaxReason2Detail">
+            <span id="notax_reason2_detail"></span>
+          </div>
+        </div>
+        <p class="marginBottom5 declaraction ">本人确认上述信息的真实、准确和完整，且当这些信息发生变更时，将在 30日内通知贵机构，否则本人承担由此造成的不利后果。</p>
+        <div class="form-group sign clearfix">
+          <div class="form-group floatL">
+            <span>
+              签名：
+            </span>
+            <div class="info signName">
+            </div>
+          </div>
+          <div class="form-group floatR">
+            <span>
+              日期：
+            </span>
+            <span class="allot_date"></span>
+          </div>
+        </div>
+        <div class="form-group identity clearfix">
+          <span class="floatL">
+            签名人身份：
+          </span>
+          <ul class="floatL clearfix">
+            <li class="floatL">
+              <i class="iconfont tog_sign_self">&#xe664;</i>
+              <i class="iconfont tog_sign_self">&#xe665;</i>
+              本人
+            </li>
+            <li class="floatL">
+              <i class="iconfont tog_sign_deputy">&#xe664;</i>
+              <i class="iconfont tog_sign_deputy">&#xe665;</i>
+              代理人
+            </li>
+          </ul>
+        </div>
+        <p class="dashedLine">******************************************************************************</p>
+        <p class="declaraction ">广发证券股份有限公司已向账户持有人充分说明我司需履行非居民金融账户涉税信息收集和报送的义务，告知账户持人应当真实、及时、准确、完整地向我司提供相关涉税信息，并配合完成相关尽职调查工作。</p>
+        <div class="form-group operator clearfix">
+          <div class="form-group floatL">
+            <span>
+              经办人签名：
+            </span>
+            <div class="info signName">
+            </div>
+          </div>
+          <div class="form-group floatR">
+            <span>
+              日期：
+            </span>
+            <span class="allot_date"></span>
+          </div>
+        </div>
+        <div class="form-group explain">
+          <p>填表说明：</p>
+          <ul>
+            <li >
+              1.本表所称中国税收居民是指在中国境内有住所，或者无住所而在境内居住满一年的个人。在中国境内有住所是指因户籍、家庭、经济利益关系而在中国境内习惯性居住。在境内居住满一年，是指在一个纳税年度中在中国境内居住 365日。临时离境的，不扣减日数。临时离境，是指在一个纳税年度中一次不超过 30日或者多次累计不超过 90日的离境。
+            </li>
+            <li>
+              2.本表所称非居民是指中国税收居民以外的个人。其他国家（地区）税收居民身份认定规则及纳税人识别号相关信息请参见国家税务总局网站（http://www.chinatax.gov.cn/aeoi_index.html）。
+            </li>
+            <li>
+              3.军人、武装警察无需填写此声明文件。
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../common/common.js"></script>
+  <script src="./index.js"></script>
+</html>
+

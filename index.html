@@ -1,0 +1,99 @@
+<!Doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="./common/bootstrap.css"/>
+  <style>
+    iframe{
+      width: 100%;
+      margin-top: 20px;
+    }
+    .btn-group{
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    button{
+      margin: 20px 20px 0 0;
+    }
+    #back{
+      position: absolute;
+      right: 20px;
+      top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="btn-group">
+    <button type="button" id="report_00040023" class="btn btn-info">report_00040023</button>
+    <button type="button" id="back" class="btn btn-info">返回</button>
+  </div>
+  <iframe frameborder="0"></iframe>
+</body>
+<script src="./common/common.js"></script>
+<script src="./report_00040023/index.js"></script>
+<script>
+  window.onload = function(){
+    var iframe = document.getElementsByTagName("iframe")[0];
+    var height = document.documentElement.scrollHeight;
+    $$("report_00040023").onclick = function(){
+      var innerdata = {
+        "branchNo":101,
+        "operaotorNo":16830,
+        "opBranchNo":101,
+        "clientId":"251100000602",
+        "fundAccount":"201712250000000267",
+        "exchangeType":"2",
+        "clientName":"测试123",
+        "stockAccount":"0158936762",
+        "reportName":"grssjm",
+        "opStation":"123xyz",
+        "scanTaskType":["0054"],
+        "scanClientType":"0001",
+        "reportDir":"/report/report_out/",
+        "format":"pdf",
+        "full_name":"测试账户",
+        "tog_china_tax":0,
+        "tog_nochina_tax":1,
+        "tog_both_tax":0,
+        "english_family_name":"english_family_name",
+        "english_first_name":"english_first_name",
+        "birthday":"20100809",
+        "live_country_cn":"中国",
+        "live_province_cn":"广东",
+        "live_city_cn":"广州",
+        "live_location_cn":"天河区马场路",
+        "live_country_en":"china",
+        "live_province_en":"guangdong",
+        "live_city_en":"guangzhou",
+        "live_location_en":"tianhequ machanglu",
+        "birth_country_cn":"中国",
+        "birth_province_cn":"河南",
+        "birth_city_cn":"信阳",
+        "birth_country_en":"china",
+        "birth_province_en":"henan",
+        "birth_city_en":"xinyang",
+        "tax_no_1":"TAX33856",
+        "tog_notax_reason1":1,
+        "tog_notax_reason2":0,
+        "notax_reason2_detail":"偷税漏税",
+        "sign_year":2017,
+        "sign_month":10,
+        "sign_day":18,
+        "tog_sign_self":0,
+        "tog_sign_deputy":1,
+        "allot_date": "2017年11月2日",
+      }
+      iframe.contentWindow.name = JSON.stringify(innerdata);
+      iframe.src = "./report_00040023/index.html";
+    }
+    $$("back").onclick = function(){
+      iframe.removeAttribute("src");
+    }
+  }
+</script>
+</html>
