@@ -65,17 +65,7 @@
 .identity span{
   line-height: 20px;
 }
-@font-face {
-  font-family: 'iconfont';  /* project id 219124 */
-  src: url('//at.alicdn.com/t/font_219124_lmnsc8tw9vmcmcxr.eot');
-  src: url('//at.alicdn.com/t/font_219124_lmnsc8tw9vmcmcxr.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_219124_lmnsc8tw9vmcmcxr.woff') format('woff'),
-  url('//at.alicdn.com/t/font_219124_lmnsc8tw9vmcmcxr.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_219124_lmnsc8tw9vmcmcxr.svg#iconfont') format('svg');
-}
 .container .iconfont {
-  /*font-weight: bold;*/
-  font-family: "iconfont";
   margin-right: 3px;
   vertical-align: middle;
   font-size: 22px;

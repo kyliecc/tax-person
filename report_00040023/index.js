@@ -42,6 +42,7 @@ window.onload = function(){
         switch(id){
           case "allot_date":
             $$class(id,0).innerHTML = data[id];
+            $$class(id,1).innerHTML = data[id];
             break;
           case "tog_china_tax":
           case "tog_nochina_tax":
@@ -56,12 +57,13 @@ window.onload = function(){
             $$(id).innerHTML = data[id];
         }
       }
-
     })
   }
   if(window.name){
     var obj = JSON.parse(window.name);
     innerData(obj);
+    setTimeout(function(){
+      print();
+    },0)
   }
-  print();
 }
